@@ -1,0 +1,275 @@
+body {
+  background: radial-gradient(dodgerblue, aqua);
+  color: black;
+}
+.hex {
+  float: left;
+  /* margin-left: 5px; */
+  margin-left: 3px;
+  /* margin-left: 1.5%; */
+  /* margin-bottom: -24px; */
+  margin-bottom: -28px;
+  /* margin-bottom: -4%; */
+}
+/* ORE */
+.hex .top-ore {
+  width: 0;
+  border-bottom: 30px solid darkgray;
+  border-left: 52px solid transparent;
+  border-right: 52px solid transparent;
+}
+.hex .middle-ore {
+  width: 104px;
+  /* width: 100%; */
+  height: 60px;
+  background: darkgray;
+  text-align: center;
+  font-size: 35px;
+}
+.hex .bottom-ore {
+  width: 0;
+  border-top: 30px solid darkgray;
+  border-left: 52px solid transparent;
+  border-right: 52px solid transparent;
+}
+
+/* SHEEP */
+.hex .top-sheep {
+  width: 0;
+  border-bottom: 30px solid greenyellow;
+  border-left: 52px solid transparent;
+  border-right: 52px solid transparent;
+}
+.hex .middle-sheep {
+  width: 104px;
+  height: 60px;
+  background: greenyellow;
+  text-align: center;
+  font-size: 35px;
+}
+.hex .bottom-sheep {
+  width: 0;
+  border-top: 30px solid greenyellow;
+  border-left: 52px solid transparent;
+  border-right: 52px solid transparent;
+}
+
+/* TREE */
+.hex .top-tree {
+  width: 0;
+  border-bottom: 30px solid green;
+  border-left: 52px solid transparent;
+  border-right: 52px solid transparent;
+}
+.hex .middle-tree {
+  width: 104px;
+  height: 60px;
+  background: green;
+  text-align: center;
+  font-size: 35px;
+}
+.hex .bottom-tree {
+  width: 0;
+  border-top: 30px solid green;
+  border-left: 52px solid transparent;
+  border-right: 52px solid transparent;
+}
+
+/* WHEAT */
+.hex .top-wheat {
+  width: 0;
+  border-bottom: 30px solid gold;
+  border-left: 52px solid transparent;
+  border-right: 52px solid transparent;
+}
+.hex .middle-wheat {
+  width: 104px;
+  height: 60px;
+  background: gold;
+  text-align: center;
+  font-size: 35px;
+}
+.hex .bottom-wheat {
+  width: 0;
+  border-top: 30px solid gold;
+  border-left: 52px solid transparent;
+  border-right: 52px solid transparent;
+}
+
+/* BRICK */
+.hex .top-brick {
+  width: 0;
+  border-bottom: 30px solid tomato;
+  border-left: 52px solid transparent;
+  border-right: 52px solid transparent;
+}
+.hex .middle-brick {
+  width: 104px;
+  height: 60px;
+  background: tomato;
+  text-align: center;
+  font-size: 35px;
+}
+.hex .bottom-brick {
+  width: 0;
+  border-top: 30px solid tomato;
+  border-left: 52px solid transparent;
+  border-right: 52px solid transparent;
+}
+
+/* DESERT */
+.hex .top-desert {
+  width: 0;
+  border-bottom: 30px solid sandybrown;
+  border-left: 52px solid transparent;
+  border-right: 52px solid transparent;
+}
+.hex .middle-desert {
+  width: 104px;
+  height: 60px;
+  background: sandybrown;
+  text-align: center;
+  font-size: 35px;
+}
+.hex .bottom-desert {
+  width: 0;
+  border-top: 30px solid sandybrown;
+  border-left: 52px solid transparent;
+  border-right: 52px solid transparent;
+}
+
+.hex-row {
+  clear: left;
+}
+.hex-row.four {
+  margin-left: -53px;
+}
+.hex-row.five {
+  margin-left: -106px;
+}
+.column {
+  float: left;
+  width: 30%;
+  margin-right: 10%;
+}
+.column2 {
+  float: left;
+  width: 40%;
+}
+.column3 {
+  float: right;
+  width: 20%;
+}
+.gameboard {
+  margin-top: 5%;
+}
+.everything {
+  margin: 30% 0 50% 0;
+}
+
+button {
+  width: 95%;
+  height: 30px;
+  margin: 5px;
+  font-size: 10px;
+}
+button:hover {
+  background-color: pink;
+}
+/* ------------------------------------------------------------ HOUSES ---------------------------------------------------------------------------------- */
+/* .house {
+  height: 20px;
+  width: 20px;
+  background-color: orchid;
+  border: 1px solid black;
+  position: absolute;
+  text-align: center;
+}
+.h1c1 {
+  top: 10%;
+  left: 36%;
+}
+.h1c2 {
+  top: 10%;
+  left: 43%;
+}
+.h1c3 {
+  top: 10%;
+  left: 50%;
+}
+
+.h2c1 {
+  top: 14%;
+  left: 33%;
+}
+.h2c2 {
+  top: 14%;
+  left: 40%;
+}
+.h2c3 {
+  top: 14%;
+  left: 46%;
+}
+.h2c4 {
+  top: 14%;
+  left: 53%;
+}
+
+.h3c1 {
+  top: 14%;
+  left: 33%;
+}
+.h3c2 {
+  top: 14%;
+  left: 40%;
+}
+.h3c3 {
+  top: 14%;
+  left: 47%;
+}
+.h3c4 {
+  top: 14%;
+  left: 54%;
+}
+
+.h4c1 {
+  top: 22%;
+  left: 33%;
+}
+.h4c2 {
+  top: 22%;
+  left: 40%;
+}
+.h4c3 {
+  top: 22%;
+  left: 47%;
+}
+.h4c4 {
+  top: 22%;
+  left: 54%;
+}
+.h4c5 {
+  top: 22%;
+  left: 54%;
+}
+
+.h5c1 {
+  top: 27%;
+  left: 30%;
+}
+.h5c2 {
+  top: 27%;
+  left: 36%;
+}
+.h5c3 {
+  top: 27%;
+  left: 43%;
+}
+.h5c4 {
+  top: 27%;
+  left: 50%;
+}
+.h5c5 {
+  top: 27%;
+  left: 57%;
+} */
