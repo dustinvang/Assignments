@@ -1,0 +1,16 @@
+body {
+  background: radial-gradient(dodgerblue, aqua);
+  color: black;
+}
+h1 {
+  font-size: 50px;
+}
+body {
+  text-align: center;
+}
+input {
+  margin: 5px;
+}
+button {
+  margin-bottom: 10px;
+}
