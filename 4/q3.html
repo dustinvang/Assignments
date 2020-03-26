@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <title>Assignement 4</title>
+    <link href="index.css" rel="stylesheet" type="text/css" />
+  </head>
+  <body>
+    <h2>Question 3</h2>
+
+    <header>
+      <a href="/index.html">Go To Index</a>
+      <a href="q1.html">Go To Question 1</a>
+      <a href="q2.html">Go To Question 2</a>
+      <strong>Question 3</strong>
+    </header>
+
+    <hr />
+    <p id="score" style="display: none;">Score: <span id="points">0</span></p>
+    <p id="timer" style="display: none;">
+      Time Left: <span id="countdown"></span> seconds
+    </p>
+    <a style="display:none" id="newGame" href="">New Game</a>
+
+    <label for="size" id="sizeLabel">Choose How Many Pictures:</label>
+    <select id="size">
+      <option value="8">8</option>
+      <option value="10">10</option>
+      <option value="12">12</option>
+    </select>
+
+    <br />
+
+    <label for="difficulty" id="difficultyLabel">Choose Difficulty:</label>
+    <select id="difficulty">
+      <option value="8">Easy</option>
+      <option value="5" selected>Normal</option>
+      <option value="3">Hard</option>
+    </select>
+
+    <br />
+
+    <button id="button" onclick="setSize()">
+      Submit
+    </button>
+
+    <div id="hiddenVariables">
+      <p id="gameLength" style="display: none;"></p>
+      <p id="gameState" style="display: none;">False</p>
+      <p id="gameFlip" style="display: none;">0</p>
+      <p id="flippedPictures" style="display: none;"></p>
+      <p id="flippedPictureNames" style="display: none;"></p>
+      <p id="pointsToWin" style="display: none;"></p>
+    </div>
+
+    <script src="index.js"></script>
+  </body>
+</html>

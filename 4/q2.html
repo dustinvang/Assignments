@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <title>Assignement 4</title>
+    <link href="index.css" rel="stylesheet" type="text/css" />
+  </head>
+  <body onload="setUp()">
+    <audio autoplay>
+      <source src="game.mp3" type="audio/mpeg" />
+    </audio>
+
+    <h2>Question 2</h2>
+
+    <header>
+      <a href="/index.html">Go To Index</a>
+      <a href="q1.html">Go To Question 1</a>
+      <strong>Question 2</strong>
+      <a href="q3.html">Go To Question 3</a>
+    </header>
+
+    <hr />
+
+    <label for="yourGuess">Enter A Number:</label>
+    <input type="text" id="yourGuess" name="yourGuess" />
+
+    <button id="button" onclick="guess()">
+      Guess
+    </button>
+
+    <a style="display:none" id="newGame" href="">New Game</a>
+
+    <p>Guesses Left: <span id="tries">10</span></p>
+    <p>Time Left: <span id="timer">60</span> seconds</p>
+    <p id="secret"></p>
+    <p id="output"></p>
+
+    <script src="index.js"></script>
+  </body>
+</html>
