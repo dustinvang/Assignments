@@ -1,139 +1,78 @@
+@media (max-width: 1088px) {
+  button {
+    width: 95%;
+    height: 40px;
+    margin: 6% 0 3% 0;
+    font-size: 10px;
+    outline: solid rgb(146, 110, 110) 1px;
+  }
+  .column2 {
+    float: right;
+  }
+  .hex {
+    float: left;
+    margin-left: 3px;
+    margin-bottom: -10px;
+  }
+  .top {
+    width: 0;
+    border-bottom: 15px solid pink;
+    border-left: 26px solid transparent;
+    border-right: 26px solid transparent;
+  }
+  .middle {
+    width: 52px;
+    height: 30px;
+    background: pink;
+    /* text-align: center; */
+    font-size: 35px;
+  }
+  .bottom {
+    width: 0;
+    border-top: 15px solid pink;
+    border-left: 26px solid transparent;
+    border-right: 26px solid transparent;
+  }
+
+  .hex-row {
+    clear: left;
+  }
+  .hex-row.four {
+    margin-left: -26px;
+  }
+  .hex-row.five {
+    margin-left: -52px;
+  }
+
+  
+}
+
 body {
   background: radial-gradient(dodgerblue, aqua);
   color: black;
 }
+
 .hex {
   float: left;
-  /* margin-left: 5px; */
   margin-left: 3px;
-  /* margin-left: 1.5%; */
-  /* margin-bottom: -24px; */
-  margin-bottom: -28px;
-  /* margin-bottom: -4%; */
+  margin-bottom: -80px;
 }
-/* ORE */
-.hex .top-ore {
+.top {
   width: 0;
-  border-bottom: 30px solid darkgray;
+  border-bottom: 30px solid pink;
   border-left: 52px solid transparent;
   border-right: 52px solid transparent;
 }
-.hex .middle-ore {
-  width: 104px;
-  /* width: 100%; */
-  height: 60px;
-  background: darkgray;
-  text-align: center;
-  font-size: 35px;
-}
-.hex .bottom-ore {
-  width: 0;
-  border-top: 30px solid darkgray;
-  border-left: 52px solid transparent;
-  border-right: 52px solid transparent;
-}
-
-/* SHEEP */
-.hex .top-sheep {
-  width: 0;
-  border-bottom: 30px solid greenyellow;
-  border-left: 52px solid transparent;
-  border-right: 52px solid transparent;
-}
-.hex .middle-sheep {
+.middle {
   width: 104px;
   height: 60px;
-  background: greenyellow;
-  text-align: center;
+  background: pink;
+  /* text-align: center; */
   font-size: 35px;
 }
-.hex .bottom-sheep {
+.bottom {
   width: 0;
-  border-top: 30px solid greenyellow;
-  border-left: 52px solid transparent;
-  border-right: 52px solid transparent;
-}
-
-/* TREE */
-.hex .top-tree {
-  width: 0;
-  border-bottom: 30px solid green;
-  border-left: 52px solid transparent;
-  border-right: 52px solid transparent;
-}
-.hex .middle-tree {
-  width: 104px;
-  height: 60px;
-  background: green;
-  text-align: center;
-  font-size: 35px;
-}
-.hex .bottom-tree {
-  width: 0;
-  border-top: 30px solid green;
-  border-left: 52px solid transparent;
-  border-right: 52px solid transparent;
-}
-
-/* WHEAT */
-.hex .top-wheat {
-  width: 0;
-  border-bottom: 30px solid gold;
-  border-left: 52px solid transparent;
-  border-right: 52px solid transparent;
-}
-.hex .middle-wheat {
-  width: 104px;
-  height: 60px;
-  background: gold;
-  text-align: center;
-  font-size: 35px;
-}
-.hex .bottom-wheat {
-  width: 0;
-  border-top: 30px solid gold;
-  border-left: 52px solid transparent;
-  border-right: 52px solid transparent;
-}
-
-/* BRICK */
-.hex .top-brick {
-  width: 0;
-  border-bottom: 30px solid tomato;
-  border-left: 52px solid transparent;
-  border-right: 52px solid transparent;
-}
-.hex .middle-brick {
-  width: 104px;
-  height: 60px;
-  background: tomato;
-  text-align: center;
-  font-size: 35px;
-}
-.hex .bottom-brick {
-  width: 0;
-  border-top: 30px solid tomato;
-  border-left: 52px solid transparent;
-  border-right: 52px solid transparent;
-}
-
-/* DESERT */
-.hex .top-desert {
-  width: 0;
-  border-bottom: 30px solid sandybrown;
-  border-left: 52px solid transparent;
-  border-right: 52px solid transparent;
-}
-.hex .middle-desert {
-  width: 104px;
-  height: 60px;
-  background: sandybrown;
-  text-align: center;
-  font-size: 35px;
-}
-.hex .bottom-desert {
-  width: 0;
-  border-top: 30px solid sandybrown;
+  border-top: 30px solid pink;
   border-left: 52px solid transparent;
   border-right: 52px solid transparent;
 }
@@ -147,129 +86,241 @@ body {
 .hex-row.five {
   margin-left: -106px;
 }
-.column {
+
+@media (min-width: 1089px) {
+  .column {
+    float: left;
+    width: 30%;
+    margin-right: 10%;
+    display: flex;
+  }
+  .column2 {
+    float: left;
+    width: 40%;
+  }
+  .column3 {
+    float: right;
+    width: 20%;
+    display: flex;
+  }
+  .gameboard {
+    margin-top: 5%;
+  }
+  .everything {
+    margin: 10% 0 50% 0;
+  }
+  .everything h2,
+  .everything div {
+    text-align: center;
+  }
+
+  button {
+    width: 95%;
+    height: 40px;
+    margin: 6% 0 3% 0;
+    font-size: 10px;
+    outline: solid lightgray 1px;
+  }
+  button:hover:enabled {
+    background-color: pink;
+    outline: solid gray 1px;
+  }
+  footer {
+    margin: 45% 0 0% 0;
+  }
+
+
+  .modal {
+    display: none; /* Hidden by default */
+    position: fixed; /* Stay in place */
+    z-index: 1; /* Sit on top */
+    left: 0;
+    top: 0;
+    width: 100%; /* Full width */
+    height: 100%; /* Full height */
+    overflow: auto; /* Enable scroll if needed */
+    background-color: rgb(0,0,0); /* Fallback color */
+    background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+  }
+  
+  /* Modal Content/Box */
+  .modal-content {
+    background-color: #fefefe;
+    margin: 15% auto; /* 15% from the top and centered */
+    padding: 20px;
+    border: 1px solid #888;
+    width: 80%; /* Could be more or less, depending on screen size */
+  }
+
+  .modal2 {
+    z-index: 2; /* Sit on top */
+  }
+
+  .close {
+    color: #aaa;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+    display: block;
+  }
+  
+  .close:hover,
+  .close:focus {
+    color: black;
+    text-decoration: none;
+    cursor: pointer;
+  }
+
+}
+.house{
+  /* width: 0; */
+  border: 15px solid black;
+  background-color: orangered;
+  position: relative;
   float: left;
-  width: 30%;
-  margin-right: 10%;
-}
-.column2 {
-  float: left;
-  width: 40%;
-}
-.column3 {
-  float: right;
-  width: 20%;
-}
-.gameboard {
-  margin-top: 5%;
-}
-.everything {
-  margin: 30% 0 50% 0;
+  left: -60px;
+  top: -10px;
 }
 
-button {
-  width: 95%;
-  height: 30px;
-  margin: 5px;
-  font-size: 10px;
+.houseFix{
+  width: 0;
+  border: 15px solid black;
+  position: relative;
+  float: left;
+  left: -90px;
+  top: -10px;
 }
-button:hover {
-  background-color: pink;
+
+/* This one is for houses messed up by the roads */
+.houseFixOther{
+  width: 0;
+  border: 15px solid black;
+  position: relative;
+  float: left;
+  left: -20px;
+  top: -75px;
 }
-/* ------------------------------------------------------------ HOUSES ---------------------------------------------------------------------------------- */
-/* .house {
-  height: 20px;
-  width: 20px;
-  background-color: orchid;
+
+.firstAndLastRowHouses{
+  left: 10px;
+  top: -10px;
+}
+
+/* This one is for the final bottom houses messed up by the roads 52 - 53*/
+.firstAndLastRowHousesFix{
+  left: -35px;
+  top: -10px;
+}
+
+/* This one is for the final bottom houses messed up by the roads 54*/
+.firstAndLastRowHousesFixOther{
+  left: -25px;
+  top: -45px;
+}
+
+.lastHouseOfRow{
+  left: 20px;
+  top: -10px;
+}
+
+/* This one is for the end houses messed up by the roads */
+.lastHouseOfRowFix{
+  left: 60px;
+  top: -75px;
+}
+.road{
+  width: 0px;
+  height: 50px;
+  border: 7px solid pink;
+  position: relative;
+  float: left;
+}
+
+.leftRoadTop{
+  -ms-transform: rotate(60deg); /* IE 9 */
+  transform: rotate(60deg);
+  left: 20px;
+  top: -10px;
+}
+.rightRoadTop{
+  -ms-transform: rotate(300deg); /* IE 9 */
+  transform: rotate(300deg);
+  left: 55px;
+  top: -10px;
+}
+.leftRoadBot{
+  -ms-transform: rotate(300deg); /* IE 9 */
+  transform: rotate(300deg);
+  left: -20px;
+  top: -15px;
+}
+.rightRoadBot{
+  -ms-transform: rotate(60deg); /* IE 9 */
+  transform: rotate(60deg);
+  left: 15px;
+  top: -15px;
+}
+.firstRoad{
+  left: -34px;
+}
+.lastRoad{
+  left: 25px;
+  top: -55px;
+}
+
+.noLongerForSale{
+  visibility: hidden;
+}
+
+.hideMeHouse{
+  visibility: hidden;
+}
+
+.hideMeRoad{
+  visibility: hidden;
+}
+
+.fas{
+  font-size: 24px;
+}
+
+.upgradable{
   border: 1px solid black;
-  position: absolute;
-  text-align: center;
+  background-color: pink;
+  position: relative;
+  float: left;
 }
-.h1c1 {
-  top: 10%;
-  left: 36%;
+.owned{
+  left: -60px;
+  top: -10px;
 }
-.h1c2 {
-  top: 10%;
-  left: 43%;
+.ownedFix{
+  left: -90px;
+  top: -10px;
 }
-.h1c3 {
-  top: 10%;
-  left: 50%;
+.ownedFixOther{
+  left: -20px;
+  top: -75px;
 }
-
-.h2c1 {
-  top: 14%;
-  left: 33%;
+.ownedFirstAndLast{
+  left: 10px;
+  top: -10px;
 }
-.h2c2 {
-  top: 14%;
-  left: 40%;
+.ownedFirstAndLastFix{
+  left: -35px;
+  top: -10px;
 }
-.h2c3 {
-  top: 14%;
-  left: 46%;
+.ownedFirstAndLastFixOther{
+  left: -25px;
+  top: -45px;
 }
-.h2c4 {
-  top: 14%;
-  left: 53%;
-}
-
-.h3c1 {
-  top: 14%;
-  left: 33%;
-}
-.h3c2 {
-  top: 14%;
-  left: 40%;
-}
-.h3c3 {
-  top: 14%;
-  left: 47%;
-}
-.h3c4 {
-  top: 14%;
-  left: 54%;
+.ownedLastHouseOfRow{
+  left: 20px;
+  top: -10px;
 }
 
-.h4c1 {
-  top: 22%;
-  left: 33%;
+/* This one is for the end houses messed up by the roads */
+.ownedLastHouseOfRowFix{
+  left: 60px;
+  top: -75px;
 }
-.h4c2 {
-  top: 22%;
-  left: 40%;
-}
-.h4c3 {
-  top: 22%;
-  left: 47%;
-}
-.h4c4 {
-  top: 22%;
-  left: 54%;
-}
-.h4c5 {
-  top: 22%;
-  left: 54%;
-}
-
-.h5c1 {
-  top: 27%;
-  left: 30%;
-}
-.h5c2 {
-  top: 27%;
-  left: 36%;
-}
-.h5c3 {
-  top: 27%;
-  left: 43%;
-}
-.h5c4 {
-  top: 27%;
-  left: 50%;
-}
-.h5c5 {
-  top: 27%;
-  left: 57%;
-} */

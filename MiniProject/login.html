@@ -1,0 +1,35 @@
+<?php
+// Start the session
+session_start();
+?>
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="login.css" />
+    <title>Dustin's Mini Project</title>
+  </head>
+
+  <body>
+    <div class="card">
+      <p>Settlers of Catan</p>
+      <div class="container">
+        <form action="login.php" method="post">
+          <label for="name">Name:</label><br />
+          <input type="text" id="name" name="name" value="Dustin Vang" /><br />
+          <label for="password">Password:</label><br />
+          <input
+            type="password"
+            id="password"
+            name="password"
+            value="123456"
+          /><br /><br />
+          <button type="submit">Submit</button>
+        </form>
+      </div>
+    </div>
+  </body>
+</html>
